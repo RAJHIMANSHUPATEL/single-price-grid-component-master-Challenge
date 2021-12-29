@@ -1,0 +1,119 @@
+body{
+    position: static;
+    background:hsl(204, 43%, 93%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+.parent{
+    display: flex;
+    position: relative;
+    width: 50vw;
+    height: 80vh;
+    margin-top: 10vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    box-shadow: grey ;
+}
+.child{
+        color: white;
+        min-width: 300px;
+
+}
+article{
+    margin-left: 3rem;
+    margin-top: 2.5rem;
+    }
+.first{
+    background: white;
+    border-radius: 10px 10px 0 0;
+    color: hsl(218, 22%, 67%);
+    width: 100%;
+    
+}
+.second{
+    background: hsl(179, 62%, 43%);
+    width: 50%;
+    border-radius: 0 0 0 10px;
+    
+}
+.third{
+    background: hsla(179, 62%, 43%, 0.85);
+    border: none;
+    width: 50%;
+    border-radius: 0 0 10px 0;
+
+}
+button{
+    margin-left: 50%;
+}
+.first article p{
+    line-height: 1.5rem;
+    margin-right: 4rem;
+}
+.first article h3{
+    color: hsl(71, 73%, 54%);
+}
+.first article h2{
+    color: hsl(179, 62%, 43%);
+}
+.second article h3{
+    font-weight: 400;
+}
+.second article h1{
+    font-size: 2rem;
+}
+.second article .p1{
+    position: relative;
+    top: -3.35rem;
+    left: 4.5rem;
+    opacity: 0.5;
+}
+.second article .p2{
+    position: relative;
+    top: -3.35rem;
+}
+button{
+    position: relative;
+    background-color: hsl(71, 73%, 54%);
+    padding: 15px 100px;
+    white-space: nowrap;
+    left: -35%;
+    top: -8%;
+    border: none;
+    color: white;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    box-shadow: 2 3 0.5;
+}
+.third article h3{
+    font-weight: 400;
+    }
+.third article p{
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.705);
+    line-height: 1.25rem;
+}
+@media screen and (max-width: 1210px) {
+    .child{
+        width: 50vw;
+    }
+    .second{
+        border-radius: 0;
+    }
+    .third{
+        border-radius: 0 0 10px 10px ;
+    }
+    
+}
+@media screen and (max-width: 375px) {
+    article{
+        margin-left: 1.7rem;
+    }
+    button{
+        left: -40%;
+    }
+}
